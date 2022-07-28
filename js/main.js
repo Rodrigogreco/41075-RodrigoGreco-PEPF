@@ -9,7 +9,7 @@ class Mates {
         this.precioTotal = mate.precio;
     }
 
-    agregarCelular() {
+    agregarMate() {
         this.cantidad++;
     }
 
@@ -122,7 +122,7 @@ function catalogo() {
 
         if (mateSelec) {
             let index = carrito.findIndex((element) => element.id === mateSelec.id);
-            carrito[index].agregarCelular();
+            carrito[index].agregarMate();
             carrito[index].actualizarPrecio();
             alert(`Agregaste otro ${carrito[index].tipo}, al carrito!!
             Ya tenes ${carrito[index].cantidad} Unidades`);
